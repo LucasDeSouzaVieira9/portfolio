@@ -1,0 +1,10 @@
+{
+    "navMenuPageDartLogic":"Dart Logic",
+    "navMenuPageDartLogicDescription":"Here we focus a little more on the logic part, leaving interfaces a little aside and focusing more on Dart.",
+    "navMenuPageSubMenuTitle":"CPF validator",
+    "navMenuItemGitHubAccess":"Access source code",
+    "navMenuItemViewMore":"View more",
+    "cpfValidateScreenCPFGenerate":"CPF Generate",
+    "cpfValidateScreenValid":"Valid",
+    "cpfValidateScreenInvalid":"Invalid"
+}

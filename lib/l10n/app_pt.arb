@@ -1,0 +1,10 @@
+{
+    "navMenuPageDartLogic":"Lógica de dart",
+    "navMenuPageDartLogicDescription":"Aqui focamos um pouco mais na parte lógica, deixando as interfaces um pouco de lado e focando mais no Dart.",
+    "navMenuPageSubMenuTitle":"Validador de CPF",
+    "navMenuItemGitHubAccess":"Acessar código fonte",
+    "navMenuItemViewMore":"Ver mais",
+    "cpfValidateScreenCPFGenerate":"Gerar CPF",
+    "cpfValidateScreenValid":"Valido",
+    "cpfValidateScreenInvalid":"Invalido"
+}
