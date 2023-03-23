@@ -13,34 +13,34 @@ class NavBarMenuPage extends StatefulWidget {
 
 class _NavBarMenuPageState extends State<NavBarMenuPage> {
   final appNavigator = inject<AppNavigator>();
-
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
         NavMenuItem(
           menuItem: MenuItemModel(
-              title: AppLocalizations.of(context)!.navMenuPageDartLogic,
-              description:
-                  AppLocalizations.of(context)!.navMenuPageDartLogicDescription,
-              pathIcon: 'assets/icons/dart.svg',
-              linkGit: 'https://www.google.com',
-              subMenu: [
-                SubMenuItemModel(
-                    AppLocalizations.of(context)!.navMenuPageSubMenuTitle,
-                    () => appNavigator.navigateToValidateCpf()),
-              ]),
+            title: AppLocalizations.of(context)!.navMenuPageDartLogic,
+            description: AppLocalizations.of(context)!.navMenuPageDartLogicDescription,
+            pathIcon: 'assets/icons/dart.svg',
+            linkGit: 'https://www.google.com',
+            codesReview: [],
+            subMenu: [
+              SubMenuItemModel(
+                AppLocalizations.of(context)!.navMenuPageSubMenuTitle,
+                () => appNavigator.navigateToValidateCpf(),
+              ),
+            ],
+          ),
         ),
         NavMenuItem(
           menuItem: MenuItemModel(
             title: 'Design de interface',
-            description:
-                AppLocalizations.of(context)!.navMenuPageDartLogicDescription,
+            description: AppLocalizations.of(context)!.navMenuPageDartLogicDescription,
             pathIcon: 'assets/icons/dart.svg',
+            codesReview: [],
             linkGit: '',
             subMenu: [
-              SubMenuItemModel(
-                  'Ui Nubank', () => appNavigator.navigateToValidateCpf()),
+              SubMenuItemModel('Ui Nubank', () => appNavigator.navigateToValidateCpf()),
             ],
           ),
         ),
@@ -58,14 +58,12 @@ class _NavBarMenuPageState extends State<NavBarMenuPage> {
             title: 'Firebase',
             description: '',
             pathIcon: 'assets/icons/dart.svg',
+            codesReview: [],
             linkGit: '',
             subMenu: [
-              SubMenuItemModel(
-                  'Login', () => appNavigator.navigateToLoginScreen(context)),
-              SubMenuItemModel('Register',
-                  () => appNavigator.navigateToRegisterScreen(context)),
-              SubMenuItemModel('Storage',
-                  () => appNavigator.navigateToStorageScreen(context)),
+              SubMenuItemModel('Login', () => appNavigator.navigateToLoginScreen(context)),
+              SubMenuItemModel('Register', () => appNavigator.navigateToRegisterScreen(context)),
+              SubMenuItemModel('Storage', () => appNavigator.navigateToStorageScreen(context)),
             ],
           ),
         ),

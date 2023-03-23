@@ -6,5 +6,10 @@
     "navMenuItemViewMore":"Ver mais",
     "cpfValidateScreenCPFGenerate":"Gerar CPF",
     "cpfValidateScreenValid":"Valido",
-    "cpfValidateScreenInvalid":"Invalido"
+    "cpfValidateScreenInvalid":"Invalido",
+    "navMenuItemCodeReview":"Códigos",
+    "navMenuItemView": "View"
+
+
+
 }
