@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/core/get_size.dart';
 import 'package:portfolio/feature/nav/nav_menu_screen.dart';
 import 'package:portfolio/feature/nav/navigator_settings.dart';
-import 'package:portfolio/packages/instant_page_route.dart';
+import 'package:portfolio/widgets/instant_page_route.dart';
 
 class NavBarScreen extends StatelessWidget {
   const NavBarScreen({Key? key}) : super(key: key);

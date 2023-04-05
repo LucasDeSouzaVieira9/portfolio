@@ -6,8 +6,6 @@ import 'package:portfolio/feature/nav/app_navigator.dart';
 import 'package:portfolio/feature/nav/nav_menu_page.dart';
 import 'package:portfolio/main.dart';
 
-import 'widget/search_widget.dart';
-
 class NavBarMenuScreen extends StatefulWidget {
   const NavBarMenuScreen({
     Key? key,
@@ -50,13 +48,6 @@ class _NavBarMenuScreenState extends State<NavBarMenuScreen> {
             ),
           ),
           const Divider(height: 0, thickness: 2, color: AppColors.darkBlue),
-          SearchWidget(
-            textEditingController: editingControllerSearch,
-            onPressedClear: () {
-              editingControllerSearch.clear();
-            },
-          ),
-          const Divider(height: 0, thickness: 2, color: AppColors.darkBlue),
           const SizedBox(height: 20),
           const Expanded(child: NavBarMenuPage()),
           const Divider(
@@ -95,7 +86,7 @@ class _NavBarMenuScreenState extends State<NavBarMenuScreen> {
                           width: 55,
                           child: Icon(Icons.translate),
                         ),
-                        const Icon(Icons.translate),
+                        const Icon(Icons.translate, color: AppColors.white),
                       ];
                     },
                     underline: const SizedBox(),

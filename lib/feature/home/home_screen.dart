@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/packages/instant_page_route.dart';
+import 'package:portfolio/widgets/instant_page_route.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

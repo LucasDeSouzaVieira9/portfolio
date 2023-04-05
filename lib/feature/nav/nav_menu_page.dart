@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:portfolio/core/inject.dart';
 import 'package:portfolio/feature/nav/app_navigator.dart';
 import 'package:portfolio/feature/nav/nav_menu_item.dart';
@@ -19,54 +18,47 @@ class _NavBarMenuPageState extends State<NavBarMenuPage> {
       children: [
         NavMenuItem(
           menuItem: MenuItemModel(
-            title: AppLocalizations.of(context)!.navMenuPageDartLogic,
-            description: AppLocalizations.of(context)!.navMenuPageDartLogicDescription,
+            title: 'test',
+            description: 'test',
             pathIcon: 'assets/icons/dart.svg',
             linkGit: 'https://www.google.com',
-            codesReview: [],
+            codesReview: [SubMenuCodesReviewModel('test', 'lib/feature/nav/nav_menu_item.dart')],
             subMenu: [
               SubMenuItemModel(
-                AppLocalizations.of(context)!.navMenuPageSubMenuTitle,
+                '123',
+                // AppLocalizations.of(context)!.navMenuPageSubMenuTitle,
                 () => appNavigator.navigateToValidateCpf(),
               ),
             ],
           ),
         ),
-        NavMenuItem(
-          menuItem: MenuItemModel(
-            title: 'Design de interface',
-            description: AppLocalizations.of(context)!.navMenuPageDartLogicDescription,
-            pathIcon: 'assets/icons/dart.svg',
-            codesReview: [],
-            linkGit: '',
-            subMenu: [
-              SubMenuItemModel('Ui Nubank', () => appNavigator.navigateToValidateCpf()),
-            ],
-          ),
-        ),
         // NavMenuItem(
         //   menuItem: MenuItemModel(
-        //     title: 'Gerência de Estados',
-        //     description: '',
+        //     title: AppLocalizations.of(context)!.navMenuPageStateManagementTitle,
+        //     description: AppLocalizations.of(context)!.navMenuPageStateManagement,
         //     pathIcon: 'assets/icons/dart.svg',
         //     linkGit: '',
-        //     subMenu: [],
+        //     codesReview: [],
+        //     subMenu: [
+        //       SubMenuItemModel('Ui Nubank', () => appNavigator.navigateToValidateCpf()),
+        //     ],
         //   ),
         // ),
-        NavMenuItem(
-          menuItem: MenuItemModel(
-            title: 'Firebase',
-            description: '',
-            pathIcon: 'assets/icons/dart.svg',
-            codesReview: [],
-            linkGit: '',
-            subMenu: [
-              SubMenuItemModel('Login', () => appNavigator.navigateToLoginScreen(context)),
-              SubMenuItemModel('Register', () => appNavigator.navigateToRegisterScreen(context)),
-              SubMenuItemModel('Storage', () => appNavigator.navigateToStorageScreen(context)),
-            ],
-          ),
-        ),
+
+        // NavMenuItem(
+        //   menuItem: MenuItemModel(
+        //     title: 'Firebase',
+        //     description: '',
+        //     pathIcon: 'assets/icons/dart.svg',
+        //     codesReview: [],
+        //     linkGit: '',
+        //     subMenu: [
+        //       SubMenuItemModel('Login', () => appNavigator.navigateToLoginScreen(context)),
+        //       SubMenuItemModel('Register', () => appNavigator.navigateToRegisterScreen(context)),
+        //       SubMenuItemModel('Storage', () => appNavigator.navigateToStorageScreen(context)),
+        //     ],
+        //   ),
+        // ),
       ],
     );
   }

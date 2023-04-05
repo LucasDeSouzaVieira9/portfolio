@@ -87,7 +87,7 @@ flutter:
   assets:
     - "assets/images/"
     - "assets/icons/"
-    - lib/feature/nav/nav_menu_item.dart
+    # - lib/feature/nav/nav_menu_item.dart
 
   fonts:
     - family: Poppins

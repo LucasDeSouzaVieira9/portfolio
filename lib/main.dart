@@ -7,8 +7,7 @@ import 'package:portfolio/core/inject.dart';
 import 'package:portfolio/core/theme_data.dart';
 import 'package:portfolio/feature/nav/nav_screen.dart';
 import 'package:portfolio/feature/splash/splash_screen.dart';
-import 'package:portfolio/firebase_options.dart';
-import 'package:portfolio/inject.dart';
+import 'package:portfolio/generated/firebase_options.dart';
 import 'package:portfolio/widgets/app_size_limiter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -47,8 +46,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Locale _locale = const Locale('pt');
 
-  final GlobalKey<NavigatorState> _navigator =
-      inject<GlobalKey<NavigatorState>>(instanceName: "global");
+  final GlobalKey<NavigatorState> _navigator = inject<GlobalKey<NavigatorState>>(instanceName: "global");
 
   @override
   void initState() {

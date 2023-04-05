@@ -3,7 +3,7 @@ import 'package:portfolio/core/app_colors.dart';
 import 'package:portfolio/core/app_theme.dart';
 import 'package:portfolio/core/inject.dart';
 import 'package:portfolio/feature/nav/app_navigator.dart';
-import 'package:portfolio/packages/instant_page_route.dart';
+import 'package:portfolio/widgets/instant_page_route.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -28,8 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     final AppNavigator appNavigator = inject<AppNavigator>();
 
-    Future.delayed(
-        const Duration(seconds: 3), () => appNavigator.navigateToNavScreen());
+    Future.delayed(const Duration(seconds: 3), () => appNavigator.navigateToNavScreen());
     super.initState();
   }
 
@@ -55,8 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 children: [
                   Text(
                     'Portfólio',
-                    style:
-                        ThemeTextStyle.h4HeadlineBold().copyWith(fontSize: 30),
+                    style: ThemeTextStyle.h4HeadlineBold().copyWith(fontSize: 30),
                   ),
                   Text(
                     'Lucas de souza vieira',

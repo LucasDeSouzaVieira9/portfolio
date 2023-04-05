@@ -26,7 +26,7 @@ class _NavMenuItemState extends State<NavMenuItem> {
         color: AppColors.darkBackground2,
         borderRadius: BorderRadius.circular(5),
       ),
-      height: selectedItem ? widget.menuItem.subMenu.length * 100 + 46 : 200,
+      height: selectedItem ? widget.menuItem.subMenu.length * 165 : 200,
       child: Column(
         children: [
           if (!selectedItem) ...[
@@ -116,8 +116,9 @@ class _NavMenuItemState extends State<NavMenuItem> {
               ),
             ),
             Expanded(
-              child: ListView.builder(
+              child: ListView.separated(
                 itemCount: widget.menuItem.subMenu.length,
+                separatorBuilder: (context, index) => const SizedBox(height: 10),
                 itemBuilder: (context, index) {
                   return Container(
                     margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -144,8 +145,8 @@ class _NavMenuItemState extends State<NavMenuItem> {
                               height: 30,
                               child: ListView.separated(
                                 scrollDirection: Axis.horizontal,
-                                itemCount: 4,
-                                separatorBuilder: (context, index) => const SizedBox(width: 5),
+                                itemCount: widget.menuItem.codesReview.length,
+                                separatorBuilder: (context, index) => const SizedBox(height: 5),
                                 itemBuilder: (context, index) => InkWell(
                                   onTap: () => PtCodeViewModal.show(context, codeReview: widget.menuItem.codesReview[index]),
                                   child: Container(
@@ -200,6 +201,7 @@ class _NavMenuItemState extends State<NavMenuItem> {
                 },
               ),
             ),
+            const SizedBox(height: 20)
           ]
         ],
       ),

@@ -8,5 +8,7 @@
     "cpfValidateScreenValid":"Valid",
     "cpfValidateScreenInvalid":"Invalid",
     "navMenuItemCodeReview": "Codes",
-    "navMenuItemView": "Visualizar"
+    "navMenuItemView": "View",
+    "navMenuPageStateManagement": "We will show a little about state management in the Flutter.",
+    "navMenuPageStateManagementTitle": "State Management"
 }

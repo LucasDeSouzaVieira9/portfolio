@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/core/app_colors.dart';
 import 'package:portfolio/core/get_size.dart';
 import 'package:portfolio/core/inject.dart';
-import 'package:portfolio/feature/dart_logic/cpf/cpf_validate_screen.dart';
-import 'package:portfolio/feature/firebase/feature/home_firebase_screen/home_firebase_screen.dart';
-import 'package:portfolio/feature/firebase/feature/login_screen/login_screen.dart';
-import 'package:portfolio/feature/firebase/feature/registration_screen/registration_screen.dart';
-import 'package:portfolio/feature/firebase/feature/splash_firebase_screen/splash_firebase_screen.dart';
-import 'package:portfolio/feature/firebase/feature/storage/storage_screen.dart';
 import 'package:portfolio/feature/home/home_screen.dart';
-import 'package:portfolio/packages/instant_page_route.dart';
+import 'package:portfolio/feature/projects/dart_logic/cpf/cpf_validate_screen.dart';
+import 'package:portfolio/feature/projects/firebase/feature/home_firebase_screen/home_firebase_screen.dart';
+import 'package:portfolio/feature/projects/firebase/feature/login_screen/login_screen.dart';
+import 'package:portfolio/feature/projects/firebase/feature/registration_screen/registration_screen.dart';
+import 'package:portfolio/feature/projects/firebase/feature/splash_firebase_screen/splash_firebase_screen.dart';
+import 'package:portfolio/feature/projects/firebase/feature/storage/storage_screen.dart';
+import 'package:portfolio/widgets/instant_page_route.dart';
 
 class NavigatorSettings extends StatelessWidget {
   NavigatorSettings({
@@ -28,8 +28,7 @@ class NavigatorSettings extends StatelessWidget {
     );
   }
 
-  final GlobalKey<NavigatorState> _navigator =
-      inject<GlobalKey<NavigatorState>>(instanceName: "navigator_settings");
+  final GlobalKey<NavigatorState> _navigator = inject<GlobalKey<NavigatorState>>(instanceName: "navigator_settings");
 
   @override
   Widget build(BuildContext context) {

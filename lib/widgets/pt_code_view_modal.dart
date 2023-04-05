@@ -34,7 +34,8 @@ class _PtCodeViewModalState extends State<PtCodeViewModal> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          constraints: const BoxConstraints(maxWidth: 600),
+          margin: const EdgeInsets.all(20),
+          constraints: const BoxConstraints(maxWidth: 800),
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: AppColors.darkBlue),
           child: Column(
             children: [
